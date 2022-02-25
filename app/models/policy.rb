@@ -10,6 +10,7 @@ class Policy < ApplicationRecord
   has_many :policy_person_distances, dependent: :destroy
   has_many :divisions, through: :policy_divisions
   has_many :watches, as: :watchable, dependent: :destroy, inverse_of: :watchable
+  belongs_to :tag
   belongs_to :user
 
   validates :name, :description, :private, presence: true

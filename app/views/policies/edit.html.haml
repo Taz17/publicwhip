@@ -12,6 +12,10 @@
   = f.error_notification
   .form-group= f.input :name, label: 'If you are for'
   .form-group= f.input :description, label: 'you believe that', hint: 'From the text, everyone should be able to agree which way the policy votes in each division'
+  .form-group= f.input :tag, label: 'Select a tag that best suits this policy', datalist: 'tag-datalist'
+  %datalist#tag-datalist
+    - @tags.each do |tag|
+      %option{value: tag.label}
   .checkbox
     %label
       %input#provisional{name: "provisional", type: "checkbox", value: "provisional", checked: @policy.provisional?}

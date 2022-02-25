@@ -28,6 +28,7 @@ class PoliciesController < ApplicationController
 
   def edit
     @policy = Policy.find(params[:id])
+    @tags = Tag.all
   end
 
   def new

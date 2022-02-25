@@ -275,3 +275,34 @@ Whip.create!([
                { id: 1, division_id: 1, party: "Liberal Party", aye_votes: 0, aye_tells: 0, no_votes: 1, no_tells: 0, both_votes: 0, abstention_votes: 0, possible_votes: 2, whip_guess: "no" },
                { id: 2, division_id: 2, party: "Liberal Party", aye_votes: 0, aye_tells: 0, no_votes: 0, no_tells: 0, both_votes: 0, abstention_votes: 0, possible_votes: 2, whip_guess: "unknown" }
              ])
+
+Tag.create!([
+              { id: 1, label: "Agriculture & Fisheries" },
+              { id: 2, label: "Broadcasting & Media" },
+              { id: 3, label: "Defence, Security & Emergency Response" },
+              { id: 4, label: "Education" },
+              { id: 5, label: "Environment & Natural Resources" },
+              { id: 6, label: "Equality" },
+              { id: 7, label: "First Nations" },
+              { id: 8, label: "Foreign Affairs & International Trade" },
+              { id: 9, label: "Government & the Constitution" },
+              { id: 10, label: "Health" },
+              { id: 11, label: "Immigration & Asylum" },
+              { id: 12, label: "Infrastructure & Industry" },
+              { id: 13, label: "Social Welfare" }
+            ])
+
+# INSERT INTO tags(label, created_at, updated_at) VALUES
+#                       ('Agriculture & Fisheries', NOW(), NOW()),
+#                       ('Broadcasting & Media', NOW(), NOW()),
+#                       ('Defence, Security & Emergency Response', NOW(), NOW()),
+#                       ('Education', NOW(), NOW()),
+#                       ('Environment & Natural Resources', NOW(), NOW()),
+#                       ('Equality', NOW(), NOW()),
+#                       ('First Nations', NOW(), NOW()),
+#                       ('Foreign Affairs & International Trade', NOW(), NOW()),
+#                       ('Government & the Constitution', NOW(), NOW()),
+#                       ('Health', NOW(), NOW()),
+#                       ('Immigration & Asylum', NOW(), NOW()),
+#                       ('Infrastructure & Industry', NOW(), NOW()),
+#                       ('Social Welfare', NOW(), NOW());
